@@ -31,7 +31,7 @@ plot(metA$'doy as decimal', metA$temp, type = "l", main = "Change in Temperature
      xlab="Day of Year", ylab="Temperature", col="red")
 
 ## plot for air for, just days 162 and 163
-plot(metA$'doy as decimal'[metA$doy== "162"], metA$temp[metA$doy== "162"],
+plot(metA$'doy as decimal'[metA$doy== "161"], metA$temp[metA$doy== "161"],
      type = "l", main = "Change in Temperature", col="red")
-lines(metA$'doy as decimal'[metA$doy== "163"], metA$temp[metA$doy== "163"],
+lines(metA$'doy as decimal'[metA$doy== "162"], metA$temp[metA$doy== "162"],
       type ="l", col= "red")
