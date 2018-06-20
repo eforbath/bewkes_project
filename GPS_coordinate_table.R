@@ -32,4 +32,4 @@ RGB.GPS$TimeID <- seq(1, dim(RGB.GPS)[1], by= 1)
 Thermal.GPS$TimeID <- seq(1, 157[1], by= 0.5)
 install.packages("plyr")
 All.GPS <- join(RGB.GPS, Thermal.GPS, by= c("TimeID"), type= "full")
-
+na.approx <- All.GPS$Latitude
