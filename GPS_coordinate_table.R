@@ -18,8 +18,7 @@ colnames(RGB.GPS)[colnames(RGB.GPS)=="V7"] <- "Roll"
 colnames(RGB.GPS)[colnames(RGB.GPS)=="V8"] <- "TimeID"
 
 
-Thermal.GPS <- data.frame(name = list.files("/Volumes/data/data_repo/field_data/
-                                            bewkes/Drone/Thermal Imagery/Imagery/Subset_06_20"))
+Thermal.GPS <- data.frame(name= list.files("/Volumes/data/data_repo/field_data/bewkes/Drone/Thermal Imagery/Imagery/Subset_06_20"))
 Thermal.GPS$temp.name <- gsub("\\0620_Thermal _", "", Thermal.GPS$name)
 Thermal.GPS$temp.name2 <- gsub(".JPG", "", Thermal.GPS$temp.name)
 Thermal.GPS$temp.name3 <- as.numeric(gsub("\\D", "", Thermal.GPS$temp.name2))
